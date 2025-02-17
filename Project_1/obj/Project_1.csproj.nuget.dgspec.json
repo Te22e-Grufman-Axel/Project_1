@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj": {}
+    "c:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj": {
+    "c:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj",
+        "projectUniqueName": "c:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj",
         "projectName": "Project_1",
-        "projectPath": "C:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj",
+        "projectPath": "c:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\Project_1.csproj",
         "packagesPath": "C:\\Users\\axel.grufman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\obj\\",
+        "outputPath": "c:\\Users\\axel.grufman\\Documents\\programering\\Project_1\\Project_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,15 @@
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.AssemblyInfoInputs.cache
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.AssemblyInfo.cs
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.csproj.CoreCompileInputs.cache
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.sourcelink.json
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\bin\Debug\net8.0\Project_1.exe
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\bin\Debug\net8.0\Project_1.deps.json
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\bin\Debug\net8.0\Project_1.runtimeconfig.json
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\bin\Debug\net8.0\Project_1.dll
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\bin\Debug\net8.0\Project_1.pdb
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.dll
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\refint\Project_1.dll
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.pdb
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\Project_1.genruntimeconfig.cache
+c:\Users\axel.grufman\Documents\programering\Project_1\Project_1\obj\Debug\net8.0\ref\Project_1.dll
