@@ -1,25 +1,30 @@
 ﻿LootGenerator lootSystem = new LootGenerator();
-Choosloot();
+while (true)
+{
+    Console.Clear();
+    Choosloot();
+}
 
 void Choosloot()
 {
     string ChosenRarety;
     int ChosenRaretyInt = 1;
-    Boolean HasChoosen = true;
+    Boolean HasChoosen = false;
 
-    while (HasChoosen)
-    {    Console.WriteLine("Chose a rarety to be dropt");
-    Console.WriteLine("Writa a number between 1 and 5");
+    while (HasChoosen == false)
+    {
+        Console.WriteLine("Chose a rarety to be dropt");
+        Console.WriteLine("Writa a number between 1 and 5");
         ChosenRarety = Console.ReadLine();
         ChosenRaretyInt = ParseStringToInt(ChosenRarety);
-        if (ChosenRaretyInt < 5 && ChosenRaretyInt > 1)
+        if (ChosenRaretyInt <= 5 && ChosenRaretyInt >= 1)
         {
-            Console.Clear();
-            Console.WriteLine("Wrong, try again");
+            HasChoosen = true;
         }
         else
         {
-            HasChoosen = false;
+            Console.Clear();
+            Console.WriteLine("Wrong, try again");
         }
     }
     List<Item> loot = lootSystem.GenerateLoot(ChosenRaretyInt);
