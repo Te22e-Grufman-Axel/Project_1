@@ -6,7 +6,7 @@ class LootGenerator
     private List<string> armorNames = new List<string>();
     private List<string> potionNames = new List<string>() 
     {
-        "Health Potion", "Mana Potion", "Stamina Potion", "Elixir of Life"
+        "Health Potion", "Elixir of Life"
     };
 
     public LootGenerator()
@@ -24,7 +24,7 @@ class LootGenerator
         }
         else
         {
-            Console.WriteLine($"Warning: {fileName} not found. Using default names.");
+            Console.WriteLine("Warning: {fileName} not found. Using default names.");
             list.Add("Unknown Item");
         }
     }

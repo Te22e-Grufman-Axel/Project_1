@@ -6,7 +6,7 @@ class Characther
     protected int health = 100;
     protected int attack;
     protected int defense;
-    // private List<item> inventory = [];
+    private List<Item> inventory = [];
 
 
 
