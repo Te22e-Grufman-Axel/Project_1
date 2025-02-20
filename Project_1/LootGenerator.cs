@@ -1,4 +1,4 @@
-class LootGenerator
+public class LootGenerator
 {
     private Random rand = new Random();
     private List<string> axeNames = new List<string>();
@@ -32,7 +32,7 @@ class LootGenerator
     public List<Item> GenerateLoot(int rarity)
     {
         List<Item> loot = new List<Item>();
-        int itemCount = rand.Next(1, rarity + 1); // More rare = more items
+        int itemCount = rand.Next(1, rarity + 1); 
 
         for (int i = 0; i < itemCount; i++)
         {

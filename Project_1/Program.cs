@@ -1,4 +1,14 @@
-﻿LootGenerator lootSystem = new LootGenerator();
+﻿// public class Program
+// {
+//     public static void Main()
+//     {
+//         Game game = new Game();
+//         game.StartGame();
+//     }
+// }
+
+
+LootGenerator lootSystem = new LootGenerator();
 while (true)
 {
     Console.Clear();

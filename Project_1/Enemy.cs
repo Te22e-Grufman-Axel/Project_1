@@ -1,10 +1,17 @@
-class Enemy : Characther
+public class Enemy : Character
 {
-private string EnemyType;
-private int LootRarety;
+    public bool IsDefeated { get; private set; } = false;
 
-public int Droploot()
-{
-    return LootRarety;
-}
+    // Constructor
+    public Enemy(string name, int health, int attackPower) : base(name, health, attackPower) { }
+
+    // Overridden method to handle damage and track if defeated
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+        if (Health <= 0)
+        {
+            IsDefeated = true;
+        }
+    }
 }

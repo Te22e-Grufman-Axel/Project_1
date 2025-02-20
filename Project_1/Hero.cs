@@ -1,18 +1,15 @@
-class Hero : Characther
+public class Hero : Character
 {
-    private string ClassType;
+    public Weapon EquippedWeapon { get; private set; }
 
+    // Constructor
+    public Hero(string name, int health, int attackPower) : base(name, health, attackPower) { }
 
-    public void useItem(Item item)
+    // Method to equip a weapon and increase attack power
+    public void EquipWeapon(Weapon weapon)
     {
-
-    }
-    public void equipWeapon(Weapon Weapon)
-    {
-
-    }
-    public void equipArmour(Armor Armor)
-    {
-
+        EquippedWeapon = weapon;
+        AttackPower += weapon.Damage;
+        Console.WriteLine($"{Name} equipped {weapon.Name}, increasing attack power to {AttackPower}!");
     }
 }

@@ -1,33 +1,32 @@
-using System.Runtime;
-
-class Characther
+public class Character
 {
-    protected string name;
-    protected int health = 100;
-    protected int attack;
-    protected int defense;
-    private List<Item> inventory = [];
+    public string Name { get; set; }
+    public int Health { get; protected set; }
+    public int AttackPower { get; protected set; }
 
-
-
-    public void Attac(Characther target)
+    // Constructor to initialize character properties
+    public Character(string name, int health, int attackPower)
     {
-        target.TakeDamage(attack);
+        Name = name;
+        Health = health;
+        AttackPower = attackPower;
     }
-    public void TakeDamage(int amount)
+
+    // Method to attack another character
+    public virtual void Attack(Character target)
     {
-        int damage = amount - defense;
-        health = health - damage;
+        Console.WriteLine($"{Name} attacks {target.Name} for {AttackPower} damage!");
+        target.TakeDamage(AttackPower);
     }
-    public Boolean isAlive()
+
+    // Method to handle damage taken
+    public virtual void TakeDamage(int damage)
     {
-        if (health < 0)
+        Health -= damage;
+        Console.WriteLine($"{Name} takes {damage} damage. Remaining health: {Health}");
+        if (Health <= 0)
         {
-            return false;
-        }
-        else
-        {
-            return true;
+            Console.WriteLine($"{Name} has been defeated!");
         }
     }
 }

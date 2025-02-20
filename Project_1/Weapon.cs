@@ -1,14 +1,10 @@
-class Weapon : Item
+public class Weapon : Item
 {
-    public int Damage { get; private set; }
+    public int Damage { get; set; }
 
-    public Weapon(string name, int damage) : base(name)
+    // Constructor
+    public Weapon(string name, int damage) : base(name) 
     {
         Damage = damage;
-    }
-
-    public override string GetStats()
-    {
-        return $"Damage: {Damage}";
     }
 }

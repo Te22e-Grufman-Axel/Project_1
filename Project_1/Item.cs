@@ -1,11 +1,15 @@
-abstract class Item
+public class Item
 {
-    public string Name { get; protected set; }
+    public string Name { get; private set; }
 
-    public Item(string name)
+    public Item(string name) // Constructor with only name
     {
         Name = name;
     }
 
-    public abstract string GetStats();
+    // Make the method virtual so it can be overridden
+    public virtual string GetStats()
+    {
+        return $"Item: {Name}";
+    }
 }
