@@ -1,17 +1,17 @@
 public static class MonsterGenerator
 {
     private static Random random = new Random();
+public static List<Enemy> GenerateMonsters(int depth)
+{
+    List<Enemy> monsters = new List<Enemy>();
+    int numberOfMonsters = new Random().Next(1, 3 + depth / 3); // Adjust as needed
 
-    public static Enemy GenerateRandomMonster(int depth) //generats a randome monster
+    for (int i = 0; i < numberOfMonsters; i++)
     {
-        string[] names = { "Goblin", "Skeleton", "Orc", "Demon", "Zombie", "Lich", "Dragon" };
-        int baseHealth = 10 + (depth * 3);
-        int attackPower = 5 + (depth * 3);
-
-        string name = names[random.Next(names.Length)];
-        int health = baseHealth + random.Next(5, 15); 
-        int attackPower2 = attackPower + random.Next(5, 15); 
-
-        return new Enemy(name, health, attackPower2);
+        monsters.Add(new Enemy($"Monster {i + 1}", depth * 10, depth * 2));
     }
+
+    return monsters;
 }
+}
+
